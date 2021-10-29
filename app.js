@@ -3,11 +3,7 @@
 //https://superheroapi.com/api/access-token/character-id
 //ej: https://superheroapi.com/api.php/3525635500807579/1
 
-//let numeroHero = document.getElementById('numHero');
-
-
 $(document).ready(function(){
-
 
     $('#btn').on('click', function(){
         let numeroHero = $('#numHero').val();
@@ -30,7 +26,6 @@ $(document).ready(function(){
        const pintarElementos = (data) => {
            //const datos = data.map(())
            console.log(data);
-
 
         document.querySelector('#cardHero').innerHTML = `
             <div class="card text-white bg-dark mb-3" style="max-width: 540px;">
@@ -60,6 +55,7 @@ $(document).ready(function(){
                 </div>
             </div>
         `
+
         var options = {
             title: {
                 text: `Estadísticas de Poder para ${data.name}`
@@ -87,15 +83,7 @@ $(document).ready(function(){
 
         }
 
-        //crear funcion
-
-        
-
-
     });
-
-    
-
 
 });
 
